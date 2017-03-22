@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 #define BUFFERSIZE 	4096
-#define COPYMODE	 	0644
+#define COPYMODE	0644
 
 void oops(char *  , char * ) ;
 
@@ -26,16 +26,16 @@ main(int ac , char * av[]){
 	}
 
 	while( (n_chars = read(in_fd , buf , BUFFERSIZE ) ) > 0 ){
-			
-		if(n_chars == -1)
-		{
-			oops("Read error from " , av[1]);
-		}
 
 		if( write(out_fd , buf , n_chars) != n_chars )
 		{
 			oops("Write error to " , av[2]);
 		}
+	}
+
+	if(n_chars == -1)
+	{
+		oops("Read error from " , av[1]);
 	}
 
 	if( close(in_fd ) == -1 || close( out_fd ) == -1 ){

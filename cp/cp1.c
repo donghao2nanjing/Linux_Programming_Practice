@@ -4,12 +4,12 @@
 #include <stdlib.h>
 
 #define BUFFERSIZE 	4096
-#define COPYMODE	 	0644
+#define COPYMODE	0644
 
 void oops(char *  , char * ) ;
 
 main(int ac , char * av[]){
-	int 		in_fd , out_fd , n_chars ;
+	int 	in_fd , out_fd , n_chars ;
 	char 	buf[BUFFERSIZE];
 
 	if( ac != 3 ){
