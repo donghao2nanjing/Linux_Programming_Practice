@@ -131,8 +131,6 @@ do_ls( char * dir, int fd){
 	exit(1);
 }
 
-
-
 char * file_type(char *f)
 {
 	char * cp;
@@ -194,19 +192,3 @@ do_cat(char * f, int fd){
 	}
 	exit(0);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

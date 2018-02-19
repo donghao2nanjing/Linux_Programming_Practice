@@ -75,10 +75,3 @@ int connect_to_server(char * host, int pnum){
 	}
 	return sock ;
 }
-
-
-
-
-
-
-
