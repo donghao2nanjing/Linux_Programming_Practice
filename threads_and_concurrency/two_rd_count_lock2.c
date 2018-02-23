@@ -1,3 +1,5 @@
+// Actually, there is no mutex(lock) here ;
+// The two threads use different struct to store the filename pointer and counter variable ;
 #include <stdio.h>
 #include <pthread.h>
 #include <ctype.h>
